@@ -6,7 +6,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 import requests
 import json
 
-token = "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"
+token = "..."
 
 header = {"Authorization": "Bearer" + token, "Accept": "application/vnd.github+json"}
 repo = "data"

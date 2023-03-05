@@ -124,7 +124,7 @@ def elements_to_rhino(filepath, ifcelements, json, scale=1000.0, scale_position=
     print(f"Wrote 3dm to '{filepath}'")
 
 if __name__=="__main__":
-    ifc = ifcopenshell.open(r"C:\Users\tsvi\OneDrive - Det Kongelige Akademi\Documents\test3.ifc")
+    ifc = ifcopenshell.open(r"model.ifc")
     storeys = ifc.by_type("IfcBuildingStorey")
     elements = [e for e in ifcopenshell.util.element.get_decomposition(storeys[0])]
     filepath = os.path.abspath("../RhinoTest2.3dm")
