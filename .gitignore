@@ -132,4 +132,4 @@ obj
 bin
 packages
 .vs
-.3dmbak
+*.3dmbak
